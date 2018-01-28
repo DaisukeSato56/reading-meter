@@ -57,7 +57,7 @@ Things you may want to cover:
 - has_many :situations
 - has_many :tweets
 
-## tweet table
+## tweets table
 |Column|Type|Options|
 |------|----|-------|
 |text|string|null: false|
@@ -82,7 +82,7 @@ Things you may want to cover:
 - belongs_to :followed, class_name: "User"
 
 
-## status table
+## statuses table
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
@@ -90,7 +90,7 @@ Things you may want to cover:
 ### Association
 - has_many :situations
 
-## situation table
+## situations table
 |Column|Type|Options|
 |------|----|-------|
 |status_id|integer|null: false, foreign_key|
@@ -102,7 +102,7 @@ Things you may want to cover:
 - belongs_to :book
 - belongs_to :status
 
-## like table
+## likes table
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
